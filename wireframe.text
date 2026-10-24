@@ -1,0 +1,25 @@
+==================================================
+SITE PLAN & WIREFRAME DESCRIPTION
+==================================================
+
+1. COLOR PALETTE INTENTIONS:
+- Primary: Deep Slate Blue (#1E293B) - Navigation & Accents
+- Background: Soft Off-White (#F8FAFC) - Clean, accessible look
+- Text: Charcoal (#334155) - High contrast readability
+- Accent: Warm Amber (#F59E0B) - Buttons & highlights
+
+2. TYPOGRAPHY / FONT CHOICES:
+- Primary Headings: Inter or Arial (Sans-Serif, bold & modern)
+- Body Text: Roboto or system-ui (Clean, readable sans-serif)
+
+3. LAYOUT STRUCTURE (ALL 3 PAGES):
+--------------------------------------------------
+[ HEADER / NAV ] - Shared across all pages: Logo/Name + Links
+--------------------------------------------------
+[ MAIN CONTENT ] 
+  - Page 1 (index.html): Intro Banner -> Quick Summary -> Call to Action
+  - Page 2 (projects.html): Grid of Project Cards -> Tech Stack Overview
+  - Page 3 (about.html): Bio Section -> Contact Form / Direct Email Info
+--------------------------------------------------
+[ FOOTER ] - Shared across all pages: Copyright & Social Links
+--------------------------------------------------
