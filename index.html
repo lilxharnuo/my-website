@@ -1,48 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Page</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homework 3: Responsive Layout</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header>
-        <h1 id="title">Developer Portfolio</h1>
-
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="about.html">About / Contact</a></li>
-            </ul>
-        </nav>
+  <div class="page-container">
+    <header class="header">
+      <h1>Adriana's Homework 3</h1>
+      <p>Responsive Flexbox & Grid Layout</p>
     </header>
 
-    <main>
-
-        <section class="info">
-    <h2>Welcome to My Site</h2>
-
-    <img src="index.jpg" alt="Anime artwork" width="350">
-
-    <p>Hi, I am a web development student building functional, accessible web applications.</p>
-</section>
-
-        <section class="info">
-            <h2>Highlights</h2>
-            <article>
-                <h3>Featured Skill</h3>
-                <p>Specializing in HTML structure, semantic elements, and modern site scaffolding.</p>
-            </article>
+    <div class="main-layout">
+      <main class="content-area card">
+        <h2>Main Content Area</h2>
+        <p>Hi, I'm a student learning web development. This page showcases my design layouts using CSS Flexbox and CSS Grid.</p>
+        
+        <section class="card-grid">
+          <div class="grid-card">
+            <h3>About Me</h3>
+            <p>I am a computer science student learning web design.</p>
+          </div>
+          <div class="grid-card">
+            <h3>Card 2</h3>
+            <p>Tablet: 2 columns</p>
+          </div>
+          <div class="grid-card">
+            <h3>Card 3</h3>
+            <p>Desktop: 3 columns</p>
+          </div>
         </section>
+      </main>
 
-    </main>
+      <aside class="sidebar card">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact Me</a></li>
+        </ul>
+      </aside>
+    </div>
 
-    <footer>
-        <p>&copy; 2026 Developer Portfolio. All rights reserved.</p>
+    <footer class="footer">
+      <p>&copy; 2026 Developer Portfolio. All rights reserved.</p>
     </footer>
+  </div>
 
 </body>
 </html>
