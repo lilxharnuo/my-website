@@ -1,49 +1,68 @@
-/* Base Styles & Reset */
+/* ==========================================
+   1. BASE STYLES & GOOGLE FONTS
+   ========================================== */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* TYPE SELECTORS: body, h1, h2, h3, p, a */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   line-height: 1.6;
-  background-color: #f4f4f9;
-  color: #333;
-  padding: 20px;
+  background-color: #f4f6f9;
+  color: #2d3748;
+  padding: 16px; /* 8px system */
 }
 
-/* Page Container */
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 8px; /* 8px system */
+}
+
+p {
+  margin-bottom: 16px; /* 8px system */
+}
+
+/* ==========================================
+   2. LAYOUT & CLASS SELECTORS
+   ========================================== */
 .page-container {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 24px; /* 8px system */
 }
 
-/* Header & Footer */
 .header, .footer {
-  background-color: #2c3e50;
-  color: white;
+  background-color: #1a202c;
+  color: #ffffff;
   text-align: center;
-  padding: 20px;
+  padding: 24px; /* 8px system */
   border-radius: 8px;
 }
 
-/* Shared Card Styling */
 .card {
-  background: white;
-  padding: 20px;
+  background: #ffffff;
+  padding: 24px; /* 8px system */
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
-/* Main Layout (Flexbox) */
+/* ID SELECTOR REQUIREMENT */
+#hero {
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 16px; /* 8px system */
+  margin-bottom: 24px; /* 8px system */
+}
+
+/* FLEXBOX MULTI-COLUMN */
 .main-layout {
   display: flex;
-  flex-direction: column; /* Mobile first: stacked layout */
-  gap: 20px;
+  flex-direction: column;
+  gap: 24px; /* 8px system */
 }
 
 .content-area {
@@ -54,34 +73,33 @@ body {
   flex: 1;
 }
 
-/* Grid Layout for Cards */
+/* GRID MULTI-COLUMN */
 .card-grid {
   display: grid;
-  grid-template-columns: 1fr; /* Mobile: 1 column */
-  gap: 15px;
-  margin-top: 20px;
+  grid-template-columns: 1fr;
+  gap: 16px; /* 8px system */
 }
 
 .grid-card {
-  background: #eef2f7;
-  padding: 15px;
-  border-radius: 6px;
-  border-left: 4px solid #3498db;
+  background: #edf2f7;
+  padding: 16px; /* 8px system */
+  border-radius: 8px;
+  border-left: 4px solid #3182ce;
 }
 
-/* Sidebar List Styling */
 .sidebar ul {
   list-style: none;
-  margin-top: 10px;
+  margin-top: 8px; /* 8px system */
 }
 
 .sidebar li {
-  margin-bottom: 8px;
+  margin-bottom: 8px; /* 8px system */
 }
 
 .sidebar a {
-  color: #3498db;
+  color: #3182ce;
   text-decoration: none;
+  font-weight: 600;
 }
 
 .sidebar a:hover {
@@ -89,36 +107,33 @@ body {
 }
 
 /* ==========================================
-   MEDIA QUERIES (3 Viewports)
+   3. RESPONSIVENESS (3 Viewports, 2 @media queries)
    ========================================== */
 
-/* 1. Mobile Viewport (320px and up) */
+/* Mobile (320px+) */
 @media (min-width: 320px) {
   body {
     font-size: 14px;
   }
 }
 
-/* 2. Tablet Viewport (768px and up) */
+/* Tablet (768px+) */
 @media (min-width: 768px) {
   body {
     font-size: 16px;
   }
-  
-  /* 2 columns for grid cards on tablet */
+
   .card-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* 3. Desktop Viewport (1200px and up) */
+/* Desktop (1200px+) */
 @media (min-width: 1200px) {
-  /* Flexbox side-by-side layout for content + sidebar */
   .main-layout {
     flex-direction: row;
   }
 
-  /* 3 columns for grid cards on desktop */
   .card-grid {
     grid-template-columns: repeat(3, 1fr);
   }
